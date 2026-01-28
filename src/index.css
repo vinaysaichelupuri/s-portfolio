@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background-color: #ffffff;
+  color: #1f2937;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9fafb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2563eb, #14b8a6);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #14b8a6, #2563eb);
+}
+
+/* Utility Classes */
+@layer components {
+  .gradient-text {
+    background: linear-gradient(135deg, #2563eb, #14b8a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg font-semibold text-white transition-all duration-300 shadow-md hover:shadow-lg;
+    background: linear-gradient(135deg, #2563eb, #14b8a6);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 border-2;
+    border-color: #2563eb;
+    color: #2563eb;
+    background: transparent;
+  }
+
+  .btn-secondary:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6 transition-all duration-300;
+  }
+
+  .card:hover {
+    @apply shadow-lg;
+    transform: translateY(-4px);
+  }
+
+  .section-padding {
+    @apply py-16 px-6 md:px-12 lg:px-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .heading-2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .heading-3 {
+    @apply text-2xl md:text-3xl font-semibold;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+/* Selection */
+::selection {
+  background: #14b8a6;
+  color: white;
+}
+
+::-moz-selection {
+  background: #14b8a6;
+  color: white;
+}
