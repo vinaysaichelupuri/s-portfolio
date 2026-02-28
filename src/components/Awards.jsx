@@ -6,9 +6,9 @@ const Awards = () => {
     {
       icon: FaMedal,
       gradient: "from-yellow-400 to-yellow-600",
-      title: "Gold Medal - 1st Winner-up Award",
-      organization: "GlaxoSmithKline",
-      date: "December 2024",
+      title: "Gold Medal",
+      organization: "Advance Induction Program (GSK)",
+      date: "",
       highlight: true,
     },
     {

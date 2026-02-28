@@ -11,7 +11,7 @@ const About = () => {
     },
     {
       icon: FaAward,
-      value: "10+",
+      value: "5+",
       label: "Awards & Achievements",
       gradient: "from-teal-500 to-teal-600",
     },
@@ -53,9 +53,9 @@ const About = () => {
                 <p>
                   Passionate{" "}
                   <span className="text-blue-600 font-semibold">
-                    Medical Business Associate
+                    Territory Business Executive
                   </span>{" "}
-                  at GlaxoSmithKline Pharmaceuticals Ltd with a strong
+                  at Novartis Healthcare Pvt. Ltd. with a strong
                   foundation in pharmaceutical sciences and clinical research.
                 </p>
                 <p>
@@ -127,7 +127,7 @@ const About = () => {
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 flex-shrink-0" />
                   <span className="text-gray-700">
-                    1st Detailing Champion at GlaxoSmithKline
+                    1st Place - BRD-8 in Glioblastoma (Poster Presentation)
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -139,7 +139,7 @@ const About = () => {
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-teal-500 mt-2 flex-shrink-0" />
                   <span className="text-gray-700">
-                    Outstanding Performance in Academics & Extension Activities
+                    1st Place - Tissue Plasminogen Activator in Brain Stroke
                   </span>
                 </li>
               </ul>
